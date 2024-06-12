@@ -8,20 +8,36 @@ export const Item = () => {
   const { id } = useParams();
   const { post, getPost } = usePosts();
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  
   useEffect(() => {
     const fetchPost = async () => {
+      try {
         await getPost(id);
         setIsLoading(false);
-    }
+      } catch (err) {
+        setError(err.message);
+        setIsLoading(false);
+      }
+    };
 
     fetchPost();
+    window.scrollTo(0, 0); 
   }, []);
 
   if (isLoading) {
     return <div className='loader'><img src={loader} alt="loader" /></div>;
   }
+
+  if (error) {
+    return <div className='error'>Error: {error}</div>;
+  }
+
+  const extractImageSrc = (content) => {
+    const match = content.match(/<img.*?src="(.*?)"/);
+    return match ? match[1] : 'default-image.jpg';
+  };
+
   return (
     <div className='item'>
       <div className="item-container" key={post.id}>
@@ -34,11 +50,7 @@ export const Item = () => {
         </div>
         <div className="item-img">
           <img 
-            src={
-              post.content.match(/<img.*?src="(.*?)"/)
-                ? post.content.match(/<img.*?src="(.*?)"/)[1]
-                : 'default-image.jpg'
-            } 
+            src={extractImageSrc(post.content)} 
             alt={post.title} 
           />
         </div>
