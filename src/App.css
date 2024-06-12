@@ -84,11 +84,16 @@
   background-color: black;
   border-radius: 10px;
   width: 70%;
+  height: 530px;
+}
+
+.hero .cuadrado .img {
+  width: 110%;
 }
 
 .hero .cuadrado .img img {
   width: 100%;
-  height: 100%;
+  height: 530px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -272,6 +277,8 @@
 .card-item:hover {
   transform: scale(1.01);
 }
+
+
 
 .card-img-item img {
   width: 100%;
@@ -508,15 +515,23 @@
   .header {
     margin-left: 1rem;
   }
+
+
   .hero .cuadrado   {
      display: flex;
      flex-direction: column;
      align-items: center;
-  }
-  .hero .cuadrado .info .fecha {
-    margin-top: 2rem;
+     height: auto;
   }
 
+  .hero .cuadrado .img {
+    width: 100%;
+    display: none;
+  }
+
+  .hero .cuadrado .info .fecha {
+    margin-top: 0;
+  }
   .card-item {
     width: 95%;
     height: auto;
