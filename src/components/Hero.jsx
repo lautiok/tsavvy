@@ -26,7 +26,7 @@ export const Hero = ( {  blogPosts, isLoading  }) => {
           <div className="info">
             <div className="category-hero">
             <p>{tec.labels ? tec.labels[0] : 'Uncategorized'}</p>
-            <Link className="link-hero" to={`/item/${tec.id}`}>Read More</Link>
+            <Link className="link-hero" to={`/item/${tec.id}`}>Ver mas</Link>
             </div>
             <h2 className="title-hero">{tec.title}</h2>
             <p className="description-hero">
@@ -54,7 +54,7 @@ export const Hero = ( {  blogPosts, isLoading  }) => {
           <div className="card-info">
             <div className="card-category">
               <p>{post.labels ? post.labels[0] : 'Uncategorized'}</p>
-              <Link className="card-link" to={`/item/${post.id}`}>Read More</Link>
+              <Link className="card-link" to={`/item/${post.id}`}>Ver mas</Link>
             </div>
             <h2 className="card-title">{post.title}</h2>
             <p className="card-description">

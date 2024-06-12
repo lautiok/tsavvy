@@ -11,7 +11,7 @@ export const Technology = () => {
       getPosts();
     }, [getPosts]);
   
-    const technologyPosts = posts.filter((post) => post.labels.includes("technology"));
+    const technologyPosts = posts.filter((post) => post.labels.includes("Tecnologia"));
   
   return (
     <main>

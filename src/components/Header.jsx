@@ -16,19 +16,22 @@ export const Header = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/society'>Society</Link>
+            <Link to='/society'>Sociedad</Link>
           </li>
           <li>
-            <Link to='/technology'>Technologies</Link>
+            <Link to='/technology'>Tecnología</Link>
           </li>
           <li>
-            <Link to='/beauty'>Beauty</Link>
+            <Link to='/beauty'>Belleza</Link>
           </li>
           <li>
-            <Link to='/travel'>Travel</Link>
+            <Link to='/travel'>Viajes</Link>
           </li>
           <li>
-            <Link to='/policy'>Politics</Link>
+            <Link to='/policy'>Política</Link>
+          </li>
+          <li>
+            <Link to='/sport'>Deportes</Link>
           </li>
         </ul>
       </nav>

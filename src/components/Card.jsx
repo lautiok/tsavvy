@@ -24,7 +24,7 @@ export const Card = ({ blogPosts, isLoading }) => {
             <div className="card-info-item">
               <div className="card-category-item">
                 <p>{post.labels ? post.labels[0] : 'Uncategorized'}</p>
-                <Link className="card-link-item" to={`/item/${post.id}`}>Read More</Link>
+                <Link className="card-link-item" to={`/item/${post.id}`}>Ver mas</Link>
               </div>
               <h2 className="card-title-item">{post.title}</h2>
               <p className="card-description-item">
