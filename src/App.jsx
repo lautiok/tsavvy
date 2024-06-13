@@ -12,6 +12,7 @@ import { Travel } from './page/Travel'
 import { Police } from './page/Police'
 import { Item } from './page/Item'
 import { Sport } from './page/Sport'
+import { Social } from './page/Social'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path='/policy' element={<Police />}/>
       <Route path='/sport' element={<Sport />}/>
       <Route path='/item/:id' element={<Item />}/>
+      <Route path='/social' element={<Social />}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

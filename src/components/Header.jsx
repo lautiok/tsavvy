@@ -33,6 +33,9 @@ export const Header = () => {
           <li>
             <Link to='/sport'>Deportes</Link>
           </li>
+          <li>
+            <Link to='/social'>Redes</Link>
+          </li>
         </ul>
       </nav>
     </header>
