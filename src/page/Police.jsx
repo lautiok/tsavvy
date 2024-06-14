@@ -11,7 +11,7 @@ export const Police = () => {
       getPosts();
     }, [getPosts]);
   
-    const PolicyPosts = posts.filter((post) => post.labels.includes("Politica"));
+    const PolicyPosts = posts.filter((post) => post.labels.includes("Politica", "politica"));
   
   return (
     <main>

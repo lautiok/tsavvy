@@ -10,7 +10,7 @@ export const Social = () => {
       getPosts();
     }, [getPosts]);
   
-    const socialPosts = posts.filter((post) => post.labels.includes("Redes"));
+    const socialPosts = posts.filter((post) => post.labels.includes("Redes", "redes"));
   
   return (
     <main>

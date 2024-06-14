@@ -9,7 +9,7 @@ export const Beauty = () => {
       getPosts();
     }, [getPosts]);
   
-    const beautyPosts = posts.filter((post) => post.labels.includes("Belleza"));
+    const beautyPosts = posts.filter((post) => post.labels.includes("Belleza", "Belleza"));
   return (
     <main>
     <Hero blogPosts={beautyPosts} isLoading={isLoading} />

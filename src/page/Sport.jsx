@@ -9,7 +9,7 @@ export const Sport = () => {
       getPosts();
     }, [getPosts]);
   
-    const SportPosts = posts.filter((post) => post.labels.includes("Deportes"));
+    const SportPosts = posts.filter((post) => post.labels.includes("Deportes", "deportes"));
   return (
     <main>
     <Hero blogPosts={SportPosts} isLoading={isLoading} />

@@ -10,7 +10,7 @@ export const Travel = () => {
       getPosts();
     }, [getPosts]);
   
-    const travelPosts = posts.filter((post) => post.labels.includes("Viajes"));
+    const travelPosts = posts.filter((post) => post.labels.includes("Viajes", "viajes"));
   
   return (
     <main>
